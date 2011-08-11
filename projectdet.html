@@ -1,0 +1,91 @@
+﻿<!doctype html>
+<html class="no-js" lang="en">
+<head>    
+    <script type="text/javascript">
+        function css_browser_selector(u) { var ua = u.toLowerCase(), is = function (t) { return ua.indexOf(t) > -1 }, g = 'gecko', w = 'webkit', s = 'safari', o = 'opera', m = 'mobile', h = document.documentElement, b = [(!(/opera|webtv/i.test(ua)) && /msie\s(\d)/.test(ua)) ? ('ie ie' + RegExp.$1) : is('firefox/2') ? g + ' ff2' : is('firefox/3.5') ? g + ' ff3 ff3_5' : is('firefox/3.6') ? g + ' ff3 ff3_6' : is('firefox/3') ? g + ' ff3' : is('gecko/') ? g : is('opera') ? o + (/version\/(\d+)/.test(ua) ? ' ' + o + RegExp.$1 : (/opera(\s|\/)(\d+)/.test(ua) ? ' ' + o + RegExp.$2 : '')) : is('konqueror') ? 'konqueror' : is('blackberry') ? m + ' blackberry' : is('android') ? m + ' android' : is('chrome') ? w + ' chrome' : is('iron') ? w + ' iron' : is('applewebkit/') ? w + ' ' + s + (/version\/(\d+)/.test(ua) ? ' ' + s + RegExp.$1 : '') : is('mozilla/') ? g : '', is('j2me') ? m + ' j2me' : is('iphone') ? m + ' iphone' : is('ipod') ? m + ' ipod' : is('ipad') ? m + ' ipad' : is('mac') ? 'mac' : is('darwin') ? 'mac' : is('webtv') ? 'webtv' : is('win') ? 'win' + (is('windows nt 6.0') ? ' vista' : '') : is('freebsd') ? 'freebsd' : (is('x11') || is('linux')) ? 'linux' : '', 'js']; c = b.join(' '); h.className += ' ' + c; return c; }; css_browser_selector(navigator.userAgent);
+    </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    
+    <title></title>
+    <meta name="author" content="info@infinityweb.co.nz" />
+    <meta name="robots" content="FOLLOW,INDEX" />
+    <link rel="image_src" href="http://infinityweb.co.nz/resources/images/logo.jpg" />    
+    <link rel="stylesheet" type="text/css" href="resources/infinity/stylesheets/webkit.css" />
+    <script type="text/javascript" src="resources/javascript/modernizr.custom.37158.js"></script>
+
+    <script type="text/javascript" src="resources/javascript/jquery.min.js"></script>
+    <!--<script type="text/javascript" src="/resources/javascript/jquery.animate-enhanced.min.js"></script>-->
+    <!--<script type="text/javascript" src="/resources/javascript/jqshuffle.js"></script>-->
+    <script type="text/javascript" src="resources/javascript/infinity.js"></script>
+</head>
+<body class="footerTexture">
+  <header>
+    <div class="inner">
+      <a class="logo" href="/">infinity web</a> 
+      <nav>
+        <a href="#" class="active">Work</a>
+        <a href="#">Services</a>
+        <a href="#">Jobs</a>  
+        <a href="#">Contact</a>
+        <a href="#">Blog</a>
+      </nav>
+      <div class="clearer"></div>
+    </div>    
+  </header>
+
+
+  <section class="slideshow">
+    <div class="articles" style="width: 5100px">
+      <article class="active"><img src="media/003/001.jpg" /></article>
+      <article><img src="media/003/002.jpg" /></article>
+      <article><img src="media/003/003.jpg" /></article>
+      <article><img src="media/003/004.jpg" /></article>
+      <article><img src="media/003/005.jpg" /></article>
+      <article><img src="media/003/006.jpg" /></article>
+    </div>
+  </section>
+  <section class="project2col content">
+    <div class="inner">
+      <div class="left">
+        <h1>The Easel Project</h1>
+        <p>The new free phone directory 0133 has launched. The branding agency Marque approached us while developing the 0133 brand guidelines to help them further enhance the digital structure and website.<br/><br/>We worked closely with Marque and other industry specialists to bring a well tailored solution to meet their needs.</p>
+      </div>
+      <div class="right">
+        <div class="slideControls">
+          3 <strong>of</strong> 5
+          <a class="navleft" href="#"><-</a>
+          <a class="navright" href="#">>-</a>
+        </div>      
+        <div class="clifo footerTexture">
+          <p>Client: The Easel Project<br />            Roles: Design, Build, Other Stuff</p>
+
+          <a class="roundCapButton" href="#">View This Website</a>
+      </div>
+      </div>
+      
+      <div class="clearer"></div>
+    </div>
+  </section>
+
+
+
+  <script type="text/javascript">
+    $(window).load(function(){
+      var screenwidth = $("body").width();
+      var firstw = $(".slideshow .active").width();
+      console.log(firstw);
+      var startLeft = (screenwidth - firstw) / 2;
+      $(".slideshow .articles").css("margin-left", startLeft + "px");
+    });
+  </script>
+
+
+
+
+  <footer>    <div class="inner">      <div class="follow">        <span class="title">Follow us</span>        <p>          You can follow us in any of the following places,             <a href="/blog/rss.aspx" target="_blank">RSS</a>,             <a href="http://twitter.com/infinitywebnz/" target="_blank">Twitter</a>,             <a href="http://www.facebook.com/pages/InfinityWeb/180507411989446?sk=wall" target="_blank">Facebook</a>        </p>      </div>      <div class="twit">        <span class="title">Tweets</span>        <p>          Join our team... if you dare: InfinityWeb are looking for some new talent to come and party with us. We're curren...           <a href="http://bit.ly/nXiuRx" target="_blank">bit.ly/nXiuRx</a> <a href="http://twitter.com/infinitywebnz/statuses/95982986532634624" class="twitter-link" target="_blank">@infinitywebnz</a>        </p>      </div>      <div class="address">        <span class="title">InfinityWeb</span>        Level 9, 396 Queen St, <br /> Auckland, New Zealand,<br /><a href="http://www.infinityweb.co.nz/">www.infinityweb.co.nz</a>      </div>            <div class="clearer"></div>    </div>  </footer>
+</body>
+</html>

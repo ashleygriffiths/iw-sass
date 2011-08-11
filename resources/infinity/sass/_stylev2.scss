@@ -1,0 +1,733 @@
+﻿$text-body: #616161;
+$text-nav: #696969;
+$text-foot: #606060;
+$text-flink: #333;
+
+@import "_font-face";
+ 
+$font-sans: sans-serif;
+$font-serif: 'serif-demi', Georgia, Times, serif;
+$font-serif-bold: 'serif-bold', Georgia, Times, serif;
+$font-serif-li: 'serif-light-italic', Georgia, Times, serif;
+$font-serif-demi-italic: 'serif-demi-italic', Geogria, Times, serif;
+// $font-serif-italic: 'Neutraface Slab Text Demi Italic', Georgia, Times, serif;
+
+@mixin clearer {
+	clear: both;
+	line-height: 0;
+	height: 0;
+}
+@mixin image($img, $color: transparent, $repeat: no-repeat, $pos: 0 0){
+	@if $supports_inline == 1 {
+		background: $color inline-image("../images/#{$img}") $repeat $pos;
+	}
+	@if $supports_inline == 0 {
+		background: $color url("../images/#{$img}") $repeat $pos;
+	}
+}
+@mixin background-image($img){
+	@if $supports_inline == 1 {
+		background-image: inline-image("../images/#{$img}");
+	}
+	@if $supports_inline == 0 {
+		background-image: url("../images/#{$img}");
+	}
+}
+@mixin border-radius($radius: 25px){
+	@if $vendor == moz{
+		-moz-border-radius: $radius;
+	}
+	@if $vendor == webkit{
+		-webkit-border-radius: $radius;
+	}
+	@if $vendor == o{
+		-o-border-radius: $radius;
+	}	
+	border-radius: $radius;
+}
+@mixin transition($property, $duration, $ease: ease-in-out, $delay: 0ms){
+	@if $vendor == moz{
+		-moz-transition: $property $duration $ease;
+		@if $delay != 0ms {
+			-moz-transition-delay: $delay;
+		}
+	}
+	@if $vendor == webkit{
+		-webkit-transition: $property $duration $ease;
+		@if $delay != 0ms{
+			-webkit-transition-delay: $delay;
+		}
+	}
+	@if $vendor == o{
+		-o-transition: $property $duration $ease;
+		@if $delay != 0ms{
+			-o-transition-delay: $delay;
+		}
+	}
+}
+@mixin transition2($property1, $property2, $duration, $ease: ease-in-out){
+	@if $vendor == moz{
+		-moz-transition: $property1 $duration $ease;
+		-moz-transition-property: $property1, $property2;
+	}
+	@if $vendor == webkit{
+		-webkit-transition: $property1 $duration $ease;
+		-webkit-transition-property: $property1, $property2;
+	}
+	@if $vendor == o{
+		-o-transition: $property1 $duration $ease;
+		-o-transition-property: $property1, $property2;
+	}
+}
+@mixin transition-delay($delay){
+	@if $vendor == moz{		
+		-moz-transition-delay: $delay;
+	}
+	@if $vendor == webkit{
+		-webkit-transition-delay: $delay;
+	}
+	@if $vendor == o{
+		-o-transition-delay: $delay;
+	}
+}
+@mixin scale($size){
+	//calc an ie matrix... ???
+	@if $vendor == moz{
+		-moz-transform: scale($size);
+	}
+	@if $vendor == webkit{
+		-webkit-transform: scale($size);
+	}
+	@if $vendor == o{
+		-webkit-transform: scale($size);
+	}
+}
+@mixin boxshadow4($prop1, $prop2, $prop3, $prop4, $color){
+	@if $vendor == moz{
+		-moz-box-shadow: $prop1 $prop2 $prop3 $prop4 $color;
+	}
+	@if $vendor == webkit{
+		-webkit-box-shadow: $prop1 $prop2 $prop3 $prop4 $color;
+	}
+	@if $vendor == o{
+		-o-box-shadow: $prop1 $prop2 $prop3 $prop4 $color;
+	}
+	box-shadow: $prop1 $prop2 $prop3 $prop4 $color;
+}
+@mixin opacity($perc){
+	@if $vendor == moz or $vendor == webkit or $vendor == o{		
+		opacity: $perc / 100;
+	}
+	@if $vendor == ms{
+		filter: alpha(opacity=$perc);
+	}
+}
+
+.footerTexture {
+	@include image("footerbg.png", #efefef, repeat);
+}
+
+body{
+	margin: 0; padding: 0;
+	font: normal 13px/140% $font-sans;
+	color: $text-body;	
+}
+.inner{
+	width: 850px;
+	margin: 0 auto;
+}
+div{
+	&.clearer{
+		@include clearer;
+	}
+}
+header{	
+	background: #fff;
+	a.logo{
+		@include image("logo.png");
+		width: 81px; height: 81px;
+		display: block;
+		text-indent: -999em;
+		float: left;
+		margin-top: 20px;
+	}
+	nav{
+		width: 850px - 81px;
+		margin-top: 50px;
+		float: left;
+		text-align: right;
+		a{
+			display: inline-block;
+			font: normal 18px/120% $font-serif;			
+			color: $text-nav;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin-right: 45px;
+			padding: 0 3px 47px 0;
+			&:hover{
+				color: #C2C2C2;
+			}
+			&.active{
+				color: #C2C2C2;
+				border-bottom: solid 6px #00A7A2;
+			}
+		}
+	}
+}
+aside.headline{
+	font: normal 34px/120% $font-serif;
+	color: $text-body;
+	margin-top: 12px;
+	padding-bottom: 40px;	
+}
+
+.roundCapButton{
+	display: inline-block;
+	font: normal 14px/140% $font-serif-bold;
+	color: #8E8E8E;
+	background: #DFDFDF;
+	text-transform: uppercase;
+	text-decoration: none;
+	padding: 5px 15px 4px 15px;
+	@include border-radius(4px);
+	position: relative;
+	top: -3px;
+	&:hover{
+		background: #000; color: #fff;
+	}	
+}
+
+section{
+	padding: 41px 0;
+	@include image("sectionbg.png", #fff, repeat);
+}
+
+footer{
+	height: 270px;
+	.title{
+		font: bold 12px/15px $font-sans;
+		display: block;
+		margin-bottom: 10px;
+	}
+	> div > div{
+		margin-top: 31px;
+	}
+	.follow{
+		width: 218px;
+		float: left;
+		.title{
+			@include image("follow.png", transparent, no-repeat, 60px 2px);
+		}
+	}
+	.twit{
+		width: 370px;
+		float: left;
+		.title{
+			@include image("tweet.png", transparent, no-repeat, 50px 2px);
+		}
+	}
+	.address{
+		width: 147px;
+		float: left;
+		padding-left: 20px;
+		border-left: solid 1px #C8C8C8;
+		@include boxshadow4(-2px, 0, 0, 0, #f4f4f4);		
+		.title{
+			@include image("iw.png", transparent, no-repeat, 70px 2px);
+		}
+	}
+	p{
+		color: $text-foot;
+	}
+	a{
+		color: $text-flink;
+		text-decoration: none;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}
+.white-carbon-trans{
+	@include background-image("white-carbon-trans.png");
+}
+.arrow-right span{
+	@include image("move-right.png");
+}
+.arrow-left span{
+	@include image("move-left.png");
+}
+.viewproject{
+	@include image("arrow.png", #2d2d2d, no-repeat, 107px 11px);
+	color: #fff;
+	font: italic 16px/120% $font-serif-demi-italic;
+	text-decoration: none;
+	padding: 3px 30px 6px 13px;
+	/*height: 30px - 3px; width: 133px - 13px;*/
+	
+	@include border-radius(6px);
+	&:hover{
+		background: #fff url() no-repeat 107px 11px;
+		
+		@include image("dark-arrow-right.png", #fff, no-repeat, 107px 11px);
+		color: #2d2d2d;
+	}
+}
+div.homeCarousel{
+	height: 508px;
+	overflow: hidden;
+	position: relative;
+	.container{
+		height: 508px;
+		position: relative;
+	}
+	article{
+		float: left; 
+		.data{
+			display: none;
+		}
+	}
+	.projInfo{
+		position: absolute;
+		bottom: -73px; //bottom: 0;
+		width: 850px;
+		height: 73px;
+		z-index: 7;
+		@include transition(bottom, 100ms);
+		
+		.viewproject{			
+			position: absolute; right: 31px; top: 21px;
+		}
+		hgroup{
+			text-align: right;
+			position: absolute;
+			right: 200px;
+			h3, h4{
+				margin: 0; padding: 0;
+			}
+			h3{
+				font: normal 17px/120% $font-serif-bold;
+				color: #202020;
+				text-transform: uppercase;
+				margin-top: 17px;
+			}
+			h4{
+				font: normal 13px/140% $font-sans;
+				color: #606060;
+			}			
+		}
+		.indicator{
+			//position: absolute;
+			margin: 28px 0 0 29px; //left: 29px; top: 28px;
+			
+			a{
+				outline: none; border: none;
+				display: inline-block;
+				float: left;
+				width: 16px; height: 17px;
+				@include image("indi.png");
+				margin-right: 10px;
+				&:hover, &.active{
+					@include background-image("indi-active.png");
+				}
+				&.active{
+					z-index: 10;
+				}
+			}
+		}		
+	}
+	&:hover, &.hover{
+		.projInfo{
+			bottom: 0;
+		}
+		
+	}
+	.prev, .next{
+		position: absolute;
+		top: 0; height: 508px; width: 150px;
+		z-index: 5;
+		span{
+			position: absolute;
+			height: 115px; width: 26px;
+			top: 227px;
+			@include transition2(left, right, 100ms, ease-out);
+		}
+	}
+	.prev {	
+		left: 0; 
+		span{
+			left: -26px;			
+		}
+		&:hover span{
+			left: 0;
+		}
+	}
+	.next {
+		right: 0;
+		span{
+			right: -26px;
+		}
+		&:hover span{
+			right: 0;
+		}
+	}
+	
+}
+
+div.blogIndexRow{
+	article{
+		height: 409px;
+		width: 236px;
+		float: left;
+		overflow: hidden;
+		position: relative;
+		margin: 28px 24px 0 23px;
+		text-decoration: none;
+		.img{
+			height: 236px;
+			overflow: hidden;
+			position: relative;
+			div.mask{
+				
+				height: 236px; width: 236px;
+				@include image("round-mask.png", transparent, repeat);
+				z-index: 5;
+				
+				@include scale(1);
+				@include transition(-#{$vendor}-transform, 300ms);				
+			}
+			a.blind{
+				position: absolute; top: 0; left: 0;
+				height: 236px; width: 236px;				
+				@include background-image("blind.png");//, transparent, no-repeat, 0 -477px);
+				background-position: 0 -477px;
+				background-color: transparent;
+				background-repeat: no-repeat;
+				z-index: 6;
+				
+				@include transition(background-position, 300ms, linear);				
+			}
+			a.date {
+				position: absolute; top: 100px; left: 0;
+				z-index: 7;
+				width: 236px;
+				font: italic 43px/120% $font-serif-li;
+				color: #fff;
+				text-align: center;
+				text-decoration: none;
+				@include opacity(0);
+				@include transition2(opacity, top, 300ms);
+				
+			}
+		}
+		
+		&:hover, &.hover{
+			.img{
+				div.mask{
+					@include scale(1.7);
+				}
+				a.blind{
+					background-position: 0 0;
+				}
+				a.date{
+					top: 80px;
+					@include opacity(100);
+				}
+			}
+		}
+		
+		.tease, .hovertease{
+			text-align: center;
+			padding-top: 24px;
+			height: 173px - 24px;
+			h3{
+				font: normal 17px/120% $font-serif-bold;
+				color: #212121;
+				text-transform: uppercase;
+				margin: 0; padding: 0;				
+			}
+			p{
+				font: normal 13px/160% $font-sans;
+				color: #626262;
+			}
+		}
+		.hovertease{
+			position: absolute; top: 236px; width: 236px;
+			h3, p, .viewproject{
+				position: relative;
+				top: 20px;
+				@include opacity(0);
+				@include transition2(opacity, top, 200ms, ease-in);
+			}
+			h3{
+				color: #fff;
+				@include transition-delay(100ms);
+			}
+			p {
+				@include transition-delay(200ms);
+				a{
+					color: #ccc;
+					text-decoration: none;
+					&:hover{
+						color: #fff;
+					}
+				}
+			}
+			.viewproject{
+				@include transition-delay(300ms);
+				background-color: #1B1B1B;
+				border-bottom: solid 1px #404040;
+				display: block;
+				margin: 40px auto 0 auto;
+				width: 90px;
+			}
+		}
+		.teaseblind{
+			background: #2D2D2D;			
+			text-align: center;
+			padding-top: 24px;
+			height: 173px - 24px; width: 236px;
+			position: absolute; 
+			bottom: 0; right: 0;
+			@include image("teaseblind.png", transparent, no-repeat, 236px 0px);
+			@include transition(background-position, 300ms, ease-out);
+			@include transition-delay(500ms);
+		}
+		
+		&:hover, &.hover{
+			.teaseblind{
+				background-position: -173px 0;
+				@include transition-delay(0ms);
+			}
+			.hovertease{
+				h3, p, .viewproject{
+					@include opacity(100);
+					top: 0;
+				}
+			}
+		}
+	}
+}
+section.portfoliopop{
+	position: absolute;
+	width: 902px; height: 400px;
+
+	overflow: visible;
+	background: none;
+	margin: 0; padding: 0;
+	
+	display: none;
+	
+	z-index: 30;
+	
+	@if $vendor == webkit{
+		-webkit-perspective: 100;
+	}
+	
+	.border{
+		background: #9E9E9E;
+		height: 400px;
+		position: relative;
+		overflow: visible;
+		
+		@if $vendor == webkit{
+			margin-top: -197px;
+			-webkit-transition: all 501ms cubic-bezier(.56, .04, 1, .01);         
+			-webkit-transform: rotateX(45deg) rotateY(10deg) scale(0.02);
+			
+			&.pop{
+				margin-top: 0;        
+				-webkit-transform: rotateX(0) rotateY(0) scale(1) translateY(0);
+				-webkit-transition: all 1s cubic-bezier(.29, .04, 0, 1); 
+			}
+		}
+	}
+	.container{
+	
+		border-top: solid 1px #e7e7e7;
+		height: 400px;
+		position: relative;
+		left: -4px; top: -14px;
+	}
+	
+	.arrow{
+		height: 10px;
+		position: relative;
+		top: -14px;
+		@include image("pop-arrow.png", transparent, no-repeat, 357px center);
+	}
+	
+	.book{
+		height: 304px;
+		padding: 21px 0 0 21px;
+		overflow: hidden;
+		a{
+			display: block; 
+			float: left;
+			width: 279px; height: 146px;
+			border: solid 1px #fff;
+			margin: 0 9px 9px 0;
+			position: relative;
+			background: #fff url("../../../media/000/005.png") no-repeat;
+			text-decoration: none;
+			
+			> span{
+				position: absolute; left: 0; top: 0;
+				width: 279px; height: 146px;
+				text-align: center;
+				@include image("project-blind.png", transparent, no-repeat, -425px 0);
+				@include transition(background-position, 250ms);
+				.title{
+					display: block;
+					color: #202020;
+					font: normal 17px/120% $font-serif-bold;
+					margin: 63px 0 18px 0;
+					text-transform: uppercase;
+				}
+				span{
+					@include opacity(0);
+					@include transition2(opacity, margin, 250ms);
+				}
+			}
+			&:hover > span{				
+				background-position: 0 0;				
+				.title{
+					margin: 43px 0 18px 0;
+				}
+				span{
+					@include opacity(100);
+				}
+			}
+		}
+	}
+	.page {
+		width: 881px;
+		float: left;
+	}
+	.controls{				
+		a{
+			font: italic 16px/120% $font-serif;
+			color: #434343;
+			text-decoration: none;
+			margin-top: 9px;
+			float: right;
+			@include border-radius(6px);
+			
+			&.older{
+				margin-right: 21px;
+				padding: 3px 28px 6px 14px;
+				@include image("dark-arrow-right.png", #dfdfdf, no-repeat, 57px 12px);
+			}
+			&.newer{
+				margin-right: 16px;
+				padding: 3px 14px 6px 28px;
+				@include image("dark-arrow-left.png", #dfdfdf, no-repeat, 8px 12px);
+			}
+			
+			&.disabled{
+				@include opacity(25);
+				cursor: default;
+			}
+		}
+	}
+}
+section.slideshow{
+	padding: 0;
+	overflow: hidden;
+	.articles{
+		margin: 0 auto;
+		article{
+			float: left;
+			@include opacity(30);
+			@include transition(opacity, 250ms);
+			&.active{
+				@include opacity(100);
+				
+			}
+			img, video{
+				display: block; float: left; clear: both;
+			}
+		}
+	}
+}
+section.project2col{
+	background: #fff;
+	padding-top: 21px;
+	.left{
+		width: 600px;
+		padding-right: 14px;
+		float: left;
+	}
+	.right{
+		width: 236px;
+		float: left;
+	}
+}
+.slideControls{
+	height: 35px - 9px; width: 236px;
+	padding-top: 9px;
+	background: #2D2D2D;
+	position: relative;
+	text-align: center;
+	color: #8d8d8d;	
+	strong{
+		font-weight: normal;
+		font-style: italic;
+		font-family: Georgia, Times, serif;
+	}
+	a{
+		position: absolute;
+		width: 39px; height: 35px;
+		top: 0;
+		text-indent: -999em;
+		&.navleft{
+			@include image("2dleft.png", transparent, no-repeat, center center);
+			left: 0;
+		}
+		&.navright{
+			@include image("2dright.png", transparent, no-repeat, center center);
+			right: 0;
+		}
+		&:hover{
+			background-color: #fff;
+		}
+		&.disabled{
+			display: none;
+		}
+	}	
+}
+
+.clifo{
+	a.roundCapButton{
+		font-size: 11px;
+	}
+}
+
+section.content{
+	h1{
+		font: normal 17px/120% $font-serif-bold;
+		color: #202020;
+		text-transform: uppercase;
+		margin-top: 17px;		
+	}
+	h2{}
+	h3{}
+	h4{}
+	h5{}
+	h6{}
+	p{
+		line-height: 160%;
+	}
+	ul{}
+	ol{}
+	a{}
+	span{}
+	
+}
+
+
+
+
+
+
+
+

@@ -1,0 +1,688 @@
+@font-face {
+  font-family: 'serif-bold';
+  font-weight: normal;
+  src: url("../fonts/serif-bold-webfont.eot");
+}
+
+@font-face {
+  font-family: 'serif-demi';
+  font-weight: normal;
+  src: url("../fonts/serif-demi-webfont.eot");
+}
+
+@font-face {
+  font-family: 'serif-light-italic';
+  font-weight: normal;
+  src: url("../fonts/serif-light-italic-webfont.eot");
+}
+
+@font-face {
+  font-family: 'serif-demi-italic';
+  font-weight: normal;
+  src: url("../fonts/serif-demi-italic-webfont.eot");
+}
+
+/* line 126, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.footerTexture {
+  background: #efefef url("../images/footerbg.png") repeat 0 0;
+}
+
+/* line 130, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font: normal 13px/140% sans-serif;
+  color: #616161;
+}
+
+/* line 135, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.inner {
+  width: 850px;
+  margin: 0 auto;
+}
+
+/* line 140, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.clearer {
+  clear: both;
+  line-height: 0;
+  height: 0;
+}
+
+/* line 144, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header {
+  background: #fff;
+}
+/* line 146, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header a.logo {
+  background: transparent url("../images/logo.png") no-repeat 0 0;
+  width: 81px;
+  height: 81px;
+  display: block;
+  text-indent: -999em;
+  float: left;
+  margin-top: 20px;
+}
+/* line 154, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header nav {
+  width: 769px;
+  margin-top: 50px;
+  float: left;
+  text-align: right;
+}
+/* line 159, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header nav a {
+  display: inline-block;
+  font: normal 18px/120% "serif-demi", Georgia, Times, serif;
+  color: #696969;
+  text-transform: uppercase;
+  text-decoration: none;
+  margin-right: 45px;
+  padding: 0 3px 47px 0;
+}
+/* line 167, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header nav a:hover {
+  color: #C2C2C2;
+}
+/* line 170, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+header nav a.active {
+  color: #C2C2C2;
+  border-bottom: solid 6px #00A7A2;
+}
+
+/* line 177, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+aside.headline {
+  font: normal 34px/120% "serif-demi", Georgia, Times, serif;
+  color: #616161;
+  margin-top: 12px;
+  padding-bottom: 40px;
+}
+
+/* line 184, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.roundCapButton {
+  display: inline-block;
+  font: normal 14px/140% "serif-bold", Georgia, Times, serif;
+  color: #8E8E8E;
+  background: #DFDFDF;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 5px 15px 4px 15px;
+  border-radius: 4px;
+  position: relative;
+  top: -3px;
+}
+/* line 195, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.roundCapButton:hover {
+  background: #000;
+  color: #fff;
+}
+
+/* line 200, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section {
+  padding: 41px 0;
+  background: white url("../images/sectionbg.png") repeat 0 0;
+}
+
+/* line 205, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer {
+  height: 270px;
+}
+/* line 207, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .title {
+  font: bold 12px/15px sans-serif;
+  display: block;
+  margin-bottom: 10px;
+}
+/* line 212, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer > div > div {
+  margin-top: 31px;
+}
+/* line 215, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .follow {
+  width: 218px;
+  float: left;
+}
+/* line 218, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .follow .title {
+  background: transparent url("../images/follow.png") no-repeat 60px 2px;
+}
+/* line 222, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .twit {
+  width: 370px;
+  float: left;
+}
+/* line 225, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .twit .title {
+  background: transparent url("../images/tweet.png") no-repeat 50px 2px;
+}
+/* line 229, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .address {
+  width: 147px;
+  float: left;
+  padding-left: 20px;
+  border-left: solid 1px #C8C8C8;
+  box-shadow: -2px 0 0 0 #f4f4f4;
+}
+/* line 235, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer .address .title {
+  background: transparent url("../images/iw.png") no-repeat 70px 2px;
+}
+/* line 239, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer p {
+  color: #606060;
+}
+/* line 242, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer a {
+  color: #333333;
+  text-decoration: none;
+}
+/* line 245, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* line 250, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.white-carbon-trans {
+  background-image: url("../images/white-carbon-trans.png");
+}
+
+/* line 253, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.arrow-right span {
+  background: transparent url("../images/move-right.png") no-repeat 0 0;
+}
+
+/* line 256, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.arrow-left span {
+  background: transparent url("../images/move-left.png") no-repeat 0 0;
+}
+
+/* line 259, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.viewproject {
+  background: #2d2d2d url("../images/arrow.png") no-repeat 107px 11px;
+  color: #fff;
+  font: italic 16px/120% "serif-demi-italic", Geogria, Times, serif;
+  text-decoration: none;
+  padding: 3px 30px 6px 13px;
+  /*height: 30px - 3px; width: 133px - 13px;*/
+  border-radius: 6px;
+}
+/* line 268, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.viewproject:hover {
+  background: white url() no-repeat 107px 11px;
+  background: white url("../images/dark-arrow-right.png") no-repeat 107px 11px;
+  color: #2d2d2d;
+}
+
+/* line 275, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel {
+  height: 508px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 279, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .container {
+  height: 508px;
+  position: relative;
+}
+/* line 283, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel article {
+  float: left;
+}
+/* line 285, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel article .data {
+  display: none;
+}
+/* line 289, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo {
+  position: absolute;
+  bottom: -73px;
+  width: 850px;
+  height: 73px;
+  z-index: 7;
+}
+/* line 297, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo .viewproject {
+  position: absolute;
+  right: 31px;
+  top: 21px;
+}
+/* line 300, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo hgroup {
+  text-align: right;
+  position: absolute;
+  right: 200px;
+}
+/* line 304, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo hgroup h3, div.homeCarousel .projInfo hgroup h4 {
+  margin: 0;
+  padding: 0;
+}
+/* line 307, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo hgroup h3 {
+  font: normal 17px/120% "serif-bold", Georgia, Times, serif;
+  color: #202020;
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+/* line 313, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo hgroup h4 {
+  font: normal 13px/140% sans-serif;
+  color: #606060;
+}
+/* line 318, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo .indicator {
+  margin: 28px 0 0 29px;
+}
+/* line 322, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo .indicator a {
+  outline: none;
+  border: none;
+  display: inline-block;
+  float: left;
+  width: 16px;
+  height: 17px;
+  background: transparent url("../images/indi.png") no-repeat 0 0;
+  margin-right: 10px;
+}
+/* line 329, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo .indicator a:hover, div.homeCarousel .projInfo .indicator a.active {
+  background-image: url("../images/indi-active.png");
+}
+/* line 332, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .projInfo .indicator a.active {
+  z-index: 10;
+}
+/* line 339, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel:hover .projInfo, div.homeCarousel.hover .projInfo {
+  bottom: 0;
+}
+/* line 344, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .prev, div.homeCarousel .next {
+  position: absolute;
+  top: 0;
+  height: 508px;
+  width: 150px;
+  z-index: 5;
+}
+/* line 348, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .prev span, div.homeCarousel .next span {
+  position: absolute;
+  height: 115px;
+  width: 26px;
+  top: 227px;
+}
+/* line 355, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .prev {
+  left: 0;
+}
+/* line 357, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .prev span {
+  left: -26px;
+}
+/* line 360, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .prev:hover span {
+  left: 0;
+}
+/* line 364, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .next {
+  right: 0;
+}
+/* line 366, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .next span {
+  right: -26px;
+}
+/* line 369, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.homeCarousel .next:hover span {
+  right: 0;
+}
+
+/* line 377, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article {
+  height: 409px;
+  width: 236px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  margin: 28px 24px 0 23px;
+  text-decoration: none;
+}
+/* line 385, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .img {
+  height: 236px;
+  overflow: hidden;
+  position: relative;
+}
+/* line 389, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .img div.mask {
+  height: 236px;
+  width: 236px;
+  background: transparent url("../images/round-mask.png") repeat 0 0;
+  z-index: 5;
+}
+/* line 398, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .img a.blind {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 236px;
+  width: 236px;
+  background-image: url("../images/blind.png");
+  background-position: 0 -477px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  z-index: 6;
+}
+/* line 409, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .img a.date {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  z-index: 7;
+  width: 236px;
+  font: italic 43px/120% "serif-light-italic", Georgia, Times, serif;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  filter: alpha(opacity=0);
+}
+/* line 428, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article:hover .img a.blind, div.blogIndexRow article.hover .img a.blind {
+  background-position: 0 0;
+}
+/* line 431, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article:hover .img a.date, div.blogIndexRow article.hover .img a.date {
+  top: 80px;
+  filter: alpha(opacity=100);
+}
+/* line 438, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .tease, div.blogIndexRow article .hovertease {
+  text-align: center;
+  padding-top: 24px;
+  height: 149px;
+}
+/* line 442, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .tease h3, div.blogIndexRow article .hovertease h3 {
+  font: normal 17px/120% "serif-bold", Georgia, Times, serif;
+  color: #212121;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+}
+/* line 448, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .tease p, div.blogIndexRow article .hovertease p {
+  font: normal 13px/160% sans-serif;
+  color: #626262;
+}
+/* line 453, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease {
+  position: absolute;
+  top: 236px;
+  width: 236px;
+}
+/* line 455, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease h3, div.blogIndexRow article .hovertease p, div.blogIndexRow article .hovertease .viewproject {
+  position: relative;
+  top: 20px;
+  filter: alpha(opacity=0);
+}
+/* line 461, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease h3 {
+  color: #fff;
+}
+/* line 467, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease p a {
+  color: #ccc;
+  text-decoration: none;
+}
+/* line 470, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease p a:hover {
+  color: #fff;
+}
+/* line 475, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .hovertease .viewproject {
+  background-color: #1B1B1B;
+  border-bottom: solid 1px #404040;
+  display: block;
+  margin: 40px auto 0 auto;
+  width: 90px;
+}
+/* line 484, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article .teaseblind {
+  background: #2D2D2D;
+  text-align: center;
+  padding-top: 24px;
+  height: 149px;
+  width: 236px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: transparent url("../images/teaseblind.png") no-repeat 236px 0px;
+}
+/* line 497, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article:hover .teaseblind, div.blogIndexRow article.hover .teaseblind {
+  background-position: -173px 0;
+}
+/* line 502, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+div.blogIndexRow article:hover .hovertease h3, div.blogIndexRow article:hover .hovertease p, div.blogIndexRow article:hover .hovertease .viewproject, div.blogIndexRow article.hover .hovertease h3, div.blogIndexRow article.hover .hovertease p, div.blogIndexRow article.hover .hovertease .viewproject {
+  filter: alpha(opacity=100);
+  top: 0;
+}
+
+/* line 510, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop {
+  position: absolute;
+  width: 902px;
+  height: 400px;
+  overflow: visible;
+  background: none;
+  margin: 0;
+  padding: 0;
+  display: none;
+  z-index: 30;
+}
+/* line 526, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .border {
+  background: #9E9E9E;
+  height: 400px;
+  position: relative;
+  overflow: visible;
+}
+/* line 544, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .container {
+  border-top: solid 1px #e7e7e7;
+  height: 400px;
+  position: relative;
+  left: -4px;
+  top: -14px;
+}
+/* line 552, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .arrow {
+  height: 10px;
+  position: relative;
+  top: -14px;
+  background: transparent url("../images/pop-arrow.png") no-repeat 357px center;
+}
+/* line 559, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book {
+  height: 304px;
+  padding: 21px 0 0 21px;
+  overflow: hidden;
+}
+/* line 563, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a {
+  display: block;
+  float: left;
+  width: 279px;
+  height: 146px;
+  border: solid 1px #fff;
+  margin: 0 9px 9px 0;
+  position: relative;
+  background: white url("../../../media/000/005.png") no-repeat;
+  text-decoration: none;
+}
+/* line 573, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a > span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 279px;
+  height: 146px;
+  text-align: center;
+  background: transparent url("../images/project-blind.png") no-repeat -425px 0;
+}
+/* line 579, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a > span .title {
+  display: block;
+  color: #202020;
+  font: normal 17px/120% "serif-bold", Georgia, Times, serif;
+  margin: 63px 0 18px 0;
+  text-transform: uppercase;
+}
+/* line 586, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a > span span {
+  filter: alpha(opacity=0);
+}
+/* line 591, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a:hover > span {
+  background-position: 0 0;
+}
+/* line 593, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a:hover > span .title {
+  margin: 43px 0 18px 0;
+}
+/* line 596, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .book a:hover > span span {
+  filter: alpha(opacity=100);
+}
+/* line 602, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .page {
+  width: 881px;
+  float: left;
+}
+/* line 607, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .controls a {
+  font: italic 16px/120% "serif-demi", Georgia, Times, serif;
+  color: #434343;
+  text-decoration: none;
+  margin-top: 9px;
+  float: right;
+  border-radius: 6px;
+}
+/* line 615, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .controls a.older {
+  margin-right: 21px;
+  padding: 3px 28px 6px 14px;
+  background: #dfdfdf url("../images/dark-arrow-right.png") no-repeat 57px 12px;
+}
+/* line 620, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .controls a.newer {
+  margin-right: 16px;
+  padding: 3px 14px 6px 28px;
+  background: #dfdfdf url("../images/dark-arrow-left.png") no-repeat 8px 12px;
+}
+/* line 626, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.portfoliopop .controls a.disabled {
+  filter: alpha(opacity=25);
+  cursor: default;
+}
+
+/* line 633, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.slideshow {
+  padding: 0;
+  overflow: hidden;
+}
+/* line 636, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.slideshow .articles {
+  margin: 0 auto;
+}
+/* line 638, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.slideshow .articles article {
+  float: left;
+  filter: alpha(opacity=30);
+}
+/* line 642, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.slideshow .articles article.active {
+  filter: alpha(opacity=100);
+}
+/* line 646, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.slideshow .articles article img, section.slideshow .articles article video {
+  display: block;
+  float: left;
+  clear: both;
+}
+
+/* line 652, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.project2col {
+  background: #fff;
+  padding-top: 21px;
+}
+/* line 655, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.project2col .left {
+  width: 600px;
+  padding-right: 14px;
+  float: left;
+}
+/* line 660, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.project2col .right {
+  width: 236px;
+  float: left;
+}
+
+/* line 665, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls {
+  height: 26px;
+  width: 236px;
+  padding-top: 9px;
+  background: #2D2D2D;
+  position: relative;
+  text-align: center;
+  color: #8d8d8d;
+}
+/* line 672, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls strong {
+  font-weight: normal;
+  font-style: italic;
+  font-family: Georgia, Times, serif;
+}
+/* line 677, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls a {
+  position: absolute;
+  width: 39px;
+  height: 35px;
+  top: 0;
+  text-indent: -999em;
+}
+/* line 682, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls a.navleft {
+  background: transparent url("../images/2dleft.png") no-repeat center center;
+  left: 0;
+}
+/* line 686, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls a.navright {
+  background: transparent url("../images/2dright.png") no-repeat center center;
+  right: 0;
+}
+/* line 690, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls a:hover {
+  background-color: #fff;
+}
+/* line 693, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.slideControls a.disabled {
+  display: none;
+}
+
+/* line 700, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+.clifo a.roundCapButton {
+  font-size: 11px;
+}
+
+/* line 706, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.content h1 {
+  font: normal 17px/120% "serif-bold", Georgia, Times, serif;
+  color: #202020;
+  text-transform: uppercase;
+  margin-top: 17px;
+}
+/* line 717, E:/DevelopmentProjects/_Work Shit/infinityhtml/iw-sass/resources/infinity/sass/_stylev2.scss */
+section.content p {
+  line-height: 160%;
+}
